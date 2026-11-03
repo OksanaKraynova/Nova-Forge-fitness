@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Челленджи — NovaForge | Брось себе вызов</title>
+<meta name="description" content="Челленджи NovaForge + умный квиз подбора. Присоединяйся, отмечай прогресс и соревнуйся. Профессиональный фитнес-опыт.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="header">
+<div class="container header-inner">
+<a href="index.html" class="logo">NovaForge</a>
+<nav class="nav">
+<a href="index.html">Главная</a>
+<a href="training.html">Тренировки</a>
+<a href="week.html">Программа</a>
+<a href="challenges.html" class="active">Челленджи</a>
+<a href="profile.html">Профиль</a>
+</nav>
+<div class="burger" id="burger"><span></span><span></span><span></span></div>
+</div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+<a href="index.html">Главная</a>
+<a href="training.html">Тренировки</a>
+<a href="week.html">Программа</a>
+<a href="challenges.html">Челленджи</a>
+<a href="profile.html">Профиль</a>
+</div>
+
+<main>
+  <section class="ch-hero">
+<div class="ch-hero-bg"></div>
+<div class="container">
+<div class="badge"><i class="fas fa-trophy"></i> ВЫЗОВЫ СООБЩЕСТВА</div>
+<h1>Брось себе <span>вызов</span></h1>
+<p>Пройди короткий квиз — и мы подскажем, какой челлендж подойдёт именно тебе. Потом присоединяйся и отмечай прогресс.</p>
+<div class="hero-stats">
+<div class="hero-stat"><strong>12</strong><span>активных челленджей</span></div>
+<div class="hero-stat"><strong>4 800+</strong><span>участников</span></div>
+<div class="hero-stat"><strong>89%</strong><span>заканчивают</span></div>
+</div>
+</div>
+</section>
+
+<!-- QUIZ -->
+<section class="quiz-section">
+<div class="container">
+<div class="quiz-box reveal">
+<div class="quiz-header">
+<h2>Какой челлендж тебе подходит?</h2>
+<p>4 быстрых вопроса — персональная рекомендация</p>
+</div>
+<div class="quiz-progress"><div class="quiz-progress-bar" id="quizBar"></div></div>
+
+<div class="quiz-step active" data-step="1">
+<div class="quiz-question">Какая у тебя главная цель?</div>
+<div class="quiz-options">
+<div class="quiz-option" data-value="strength"><i class="fas fa-dumbbell"></i>Набрать силу / массу</div>
+<div class="quiz-option" data-value="cardio"><i class="fas fa-running"></i>Похудеть / кардио</div>
+<div class="quiz-option" data-value="habit"><i class="fas fa-spa"></i>Гибкость и привычки</div>
+<div class="quiz-option" data-value="strength"><i class="fas fa-bolt"></i>Общая форма</div>
+</div>
+<div class="quiz-nav"><button class="quiz-btn next" id="next1" disabled>Далее</button></div>
+</div>
+
+<div class="quiz-step" data-step="2">
+<div class="quiz-question">Сколько времени готов уделять в день?</div>
+<div class="quiz-options">
+<div class="quiz-option" data-value="short"><i class="fas fa-clock"></i>15–25 минут</div>
+<div class="quiz-option" data-value="medium"><i class="fas fa-clock"></i>30–45 минут</div>
+<div class="quiz-option" data-value="long"><i class="fas fa-clock"></i>50+ минут</div>
+<div class="quiz-option" data-value="medium"><i class="fas fa-random"></i>Как получится</div>
+</div>
+<div class="quiz-nav">
+<button class="quiz-btn back" data-back>Назад</button>
+<button class="quiz-btn next" disabled>Далее</button>
+</div>
+</div>
+
+<div class="quiz-step" data-step="3">
+<div class="quiz-question">Какой у тебя опыт?</div>
+<div class="quiz-options">
+<div class="quiz-option" data-value="beginner"><i class="fas fa-seedling"></i>Новичок</div>
+<div class="quiz-option" data-value="intermediate"><i class="fas fa-chart-line"></i>Есть база</div>
+<div class="quiz-option" data-value="advanced"><i class="fas fa-crown"></i>Продвинутый</div>
+<div class="quiz-option" data-value="intermediate"><i class="fas fa-redo"></i>Возвращаюсь</div>
+</div>
+<div class="quiz-nav">
+<button class="quiz-btn back" data-back>Назад</button>
+<button class="quiz-btn next" disabled>Далее</button>
+</div>
+</div>
+
+<div class="quiz-step" data-step="4">
+<div class="quiz-question">Что для тебя важнее всего?</div>
+<div class="quiz-options">
+<div class="quiz-option" data-value="consistency"><i class="fas fa-calendar-check"></i>Регулярность</div>
+<div class="quiz-option" data-value="intensity"><i class="fas fa-fire"></i>Интенсивность</div>
+<div class="quiz-option" data-value="fun"><i class="fas fa-smile"></i>Чтобы было интересно</div>
+<div class="quiz-option" data-value="results"><i class="fas fa-trophy"></i>Быстрый результат</div>
+</div>
+<div class="quiz-nav">
+<button class="quiz-btn back" data-back>Назад</button>
+<button class="quiz-btn next" disabled>Узнать результат</button>
+</div>
+</div>
+
+<div class="quiz-result" id="quizResult">
+<div class="result-icon"><i class="fas fa-check"></i></div>
+<h3>Твой идеальный челлендж</h3>
+<p>На основе ответов мы подобрали вызов, который лучше всего зайдёт.</p>
+<div class="recommended">
+<strong id="resultName">30 дней силы</strong>
+<span id="resultDesc">Каждый день — силовая тренировка. Минимум 30 минут.</span>
+</div>
+<button class="btn btn-primary" id="scrollToChallenge"><i class="fas fa-arrow-down"></i> Перейти к челленджу</button>
+</div>
+</div>
+</div>
+</section>
+
+<div class="container">
+<div class="filters reveal">
+<button class="filter-btn active" data-filter="all">Все</button>
+<button class="filter-btn" data-filter="active">Активные</button>
+<button class="filter-btn" data-filter="strength">Сила</button>
+<button class="filter-btn" data-filter="cardio">Кардио</button>
+<button class="filter-btn" data-filter="habit">Привычки</button>
+</div>
+
+<div class="challenges-grid" id="challengesGrid">
+<div class="ch-card reveal" data-category="active strength" id="ch-strength">
+<div class="ch-img"><img src="images/power2.jpeg" alt=""><span class="tag tag-active">АКТИВНЫЙ</span></div>
+<div class="ch-body">
+<h3>30 дней силы</h3>
+<p>Каждый день — силовая тренировка. Минимум 30 минут. Прогресс фиксируется автоматически.</p>
+<div class="ch-meta"><span><i class="fas fa-calendar"></i> 30 дней</span><span><i class="fas fa-users"></i> 1 240</span><span><i class="fas fa-fire"></i> Высокий</span></div>
+<div class="ch-progress"><div class="ch-progress-header"><span>Твой прогресс</span><span class="prog-text">0/30</span></div><div class="ch-bar"><div class="ch-bar-fill"></div></div></div>
+<div class="ch-footer"><div class="participants">Осталось <strong>18 дней</strong></div><button class="btn-join" data-id="1">Присоединиться</button></div>
+</div>
+</div>
+
+<div class="ch-card reveal" data-category="active cardio" id="ch-cardio">
+<div class="ch-img"><img src="images/running.jpeg" alt=""><span class="tag tag-active">АКТИВНЫЙ</span></div>
+<div class="ch-body">
+<h3>Жиросжигание 21</h3>
+<p>21 день HIIT и кардио. Цель — создать привычку и ускорить метаболизм.</p>
+<div class="ch-meta"><span><i class="fas fa-calendar"></i> 21 день</span><span><i class="fas fa-users"></i> 890</span><span><i class="fas fa-fire"></i> Средний</span></div>
+<div class="ch-progress"><div class="ch-progress-header"><span>Твой прогресс</span><span class="prog-text">0/21</span></div><div class="ch-bar"><div class="ch-bar-fill"></div></div></div>
+<div class="ch-footer"><div class="participants">Осталось <strong>12 дней</strong></div><button class="btn-join" data-id="2">Присоединиться</button></div>
+</div>
+</div>
+
+<div class="ch-card reveal" data-category="active habit" id="ch-habit">
+<div class="ch-img"><img src="images/yoga.jpeg" alt=""><span class="tag tag-active">АКТИВНЫЙ</span></div>
+<div class="ch-body">
+<h3>Утренняя мобилити</h3>
+<p>15 минут растяжки и мобилити каждое утро. Идеально для тех, кто хочет лучше двигаться.</p>
+<div class="ch-meta"><span><i class="fas fa-calendar"></i> 14 дней</span><span><i class="fas fa-users"></i> 2 100</span><span><i class="fas fa-fire"></i> Лёгкий</span></div>
+<div class="ch-progress"><div class="ch-progress-header"><span>Твой прогресс</span><span class="prog-text">0/14</span></div><div class="ch-bar"><div class="ch-bar-fill"></div></div></div>
+<div class="ch-footer"><div class="participants">Осталось <strong>9 дней</strong></div><button class="btn-join" data-id="3">Присоединиться</button></div>
+</div>
+</div>
+
+<div class="ch-card reveal" data-category="active strength">
+<div class="ch-img"><img src="images/pull-up.jpeg" alt=""><span class="tag tag-active">АКТИВНЫЙ</span></div>
+<div class="ch-body">
+<h3>100 подтягиваний</h3>
+<p>Набери 100 подтягиваний за 30 дней. Можно разбивать на подходы.</p>
+<div class="ch-meta"><span><i class="fas fa-calendar"></i> 30 дней</span><span><i class="fas fa-users"></i> 670</span><span><i class="fas fa-fire"></i> Средний</span></div>
+<div class="ch-progress"><div class="ch-progress-header"><span>Твой прогресс</span><span class="prog-text">0/100</span></div><div class="ch-bar"><div class="ch-bar-fill"></div></div></div>
+<div class="ch-footer"><div class="participants">Осталось <strong>22 дня</strong></div><button class="btn-join" data-id="4">Присоединиться</button></div>
+</div>
+</div>
+
+<div class="ch-card reveal" data-category="active habit">
+<div class="ch-img"><img src="images/food3.jpeg" alt=""><span class="tag tag-active">АКТИВНЫЙ</span></div>
+<div class="ch-body">
+<h3>14 дней без сахара</h3>
+<p>Убери добавленный сахар. Трекер привычек + поддержка в чате.</p>
+<div class="ch-meta"><span><i class="fas fa-calendar"></i> 14 дней</span><span><i class="fas fa-users"></i> 1 560</span><span><i class="fas fa-fire"></i> Средний</span></div>
+<div class="ch-progress"><div class="ch-progress-header"><span>Твой прогресс</span><span class="prog-text">0/14</span></div><div class="ch-bar"><div class="ch-bar-fill"></div></div></div>
+<div class="ch-footer"><div class="participants">Осталось <strong>11 дней</strong></div><button class="btn-join" data-id="5">Присоединиться</button></div>
+</div>
+</div>
+
+<div class="ch-card reveal" data-category="active cardio">
+<div class="ch-img"><img src="images/runing.jpeg" alt=""><span class="tag tag-soon">СКОРО</span></div>
+<div class="ch-body">
+<h3>Первые 5 км</h3>
+<p>План подготовки к забегу на 5 км за 6 недель. Для начинающих.</p>
+<div class="ch-meta"><span><i class="fas fa-calendar"></i> 42 дня</span><span><i class="fas fa-users"></i> Скоро</span><span><i class="fas fa-fire"></i> Начальный</span></div>
+<div class="ch-progress"><div class="ch-progress-header"><span>Старт через</span><span>5 дней</span></div><div class="ch-bar"><div class="ch-bar-fill"></div></div></div>
+<div class="ch-footer"><div class="participants">Старт <strong>20 сен</strong></div><button class="btn-join" data-id="6">В лист ожидания</button></div>
+</div>
+</div>
+</div>
+
+<div class="leaderboard reveal">
+<h2>Таблица лидеров</h2>
+<p>Топ участников челленджа «30 дней силы»</p>
+<div class="lb-list">
+<div class="lb-item top1"><div class="lb-rank">1</div><img src="images/man.jpeg" class="lb-avatar" alt=""><div class="lb-info"><h4>Максим Р.</h4><span>28 дней · 56 трен.</span></div><div class="lb-score">2 840</div></div>
+<div class="lb-item"><div class="lb-rank">2</div><img src="images/woman.jpg" class="lb-avatar" alt=""><div class="lb-info"><h4>Анна К.</h4><span>27 дней · 51 трен.</span></div><div class="lb-score">2 710</div></div>
+<div class="lb-item"><div class="lb-rank">3</div><img src="images/man2.jpeg" class="lb-avatar" alt=""><div class="lb-info"><h4>Дмитрий С.</h4><span>26 дней · 49 трен.</span></div><div class="lb-score">2 590</div></div>
+<div class="lb-item"><div class="lb-rank">4</div><img src="images/yoga2.jpeg" class="lb-avatar" alt=""><div class="lb-info"><h4>Елена В.</h4><span>25 дней · 47 трен.</span></div><div class="lb-score">2 480</div></div>
+<div class="lb-item"><div class="lb-rank">5</div><img src="images/progress.jpeg" class="lb-avatar" alt=""><div class="lb-info"><h4>Игорь П.</h4><span>24 дня · 45 трен.</span></div><div class="lb-score">2 350</div></div>
+</div>
+</div>
+</div>
+
+<section class="how">
+<div class="container">
+<div class="how-header reveal">
+<div style="color:var(--accent);letter-spacing:3px;font-size:.82rem;margin-bottom:10px">КАК ЭТО РАБОТАЕТ</div>
+<h2 style="font-size:clamp(1.7rem,3.2vw,2.4rem)">Три простых шага</h2>
+</div>
+<div class="how-steps">
+<div class="how-step reveal"><div class="how-num">1</div><h3>Выбери челлендж</h3><p>Под цель и уровень. Есть варианты от 14 до 42 дней.</p></div>
+<div class="how-step reveal"><div class="how-num">2</div><h3>Отмечай дни</h3><p>После каждой тренировки. Прогресс сохраняется.</p></div>
+<div class="how-step reveal"><div class="how-num">3</div><h3>Получай награды</h3><p>Бейджи, место в таблице и реальный результат.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container reveal">
+<h2>Готов принять<br>свой первый вызов?</h2>
+<p>Начни с любого активного челленджа. Первые 7 дней — бесплатно.</p>
+<a href="index.html#pricing" class="btn btn-primary"><i class="fas fa-rocket"></i> Начать бесплатно</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><a href="index.html" class="logo">NovaForge</a><p>Фитнес-система для тех, кто хочет реального прогресса. Сделано в России.</p></div>
+<div class="footer-col"><h4>Продукт</h4><a href="training.html">Тренировки</a><a href="week.html">Программа</a><a href="challenges.html">Челленджи</a><a href="profile.html">Профиль</a></div>
+<div class="footer-col"><h4>Компания</h4><a href="index.html#about">О нас</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Контакты</a></div>
+<div class="footer-col"><h4>Контакты</h4><a href="tel:+74951234567">+7 (495) 123-45-67</a><a href="mailto:hello@novaforge.ru">hello@novaforge.ru</a></div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 NovaForge. Все права защищены.</span>
+<div class="socials"><a href="#"><i class="fab fa-telegram"></i></a><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

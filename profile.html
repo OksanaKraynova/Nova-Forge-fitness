@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Профиль — NovaForge</title>
+<meta name="description" content="Твой профиль в NovaForge: прогресс, достижения, рекорды и настройки. Следи за результатами и продолжай расти.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="header">
+<div class="container header-inner">
+<a href="index.html" class="logo">NovaForge</a>
+<nav class="nav">
+<a href="index.html">Главная</a>
+<a href="training.html">Тренировки</a>
+<a href="week.html">Программа</a>
+<a href="challenges.html" >Челленджи</a>
+<a href="profile.html" class="active">Профиль</a>
+</nav>
+<div class="burger" id="burger"><span></span><span></span><span></span></div>
+</div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+<a href="index.html">Главная</a>
+<a href="training.html">Тренировки</a>
+<a href="week.html">Программа</a>
+<a href="challenges.html">Челленджи</a>
+<a href="profile.html">Профиль</a>
+</div>
+
+<!-- PROFILE HERO -->
+<section class="profile-hero">
+<div class="profile-hero-bg"></div>
+<div class="container">
+<div class="profile-top reveal">
+<div class="avatar-wrap">
+<img src="images/man2.jpeg" alt="Аватар" class="avatar">
+<div class="avatar-edit" title="Сменить фото"><i class="fas fa-camera"></i></div>
+</div>
+<div class="profile-info">
+<div class="level"><i class="fas fa-bolt"></i> Уровень 14 · Воин</div>
+<h1>Алекс Кузнецов</h1>
+<p>В NovaForge с марта 2025 · Цель: набрать 5 кг мышечной массы · Текущая программа: Железная логика</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="container">
+
+<!-- TABS -->
+<div class="tabs reveal">
+<button class="tab-btn active" data-tab="overview">Обзор</button>
+<button class="tab-btn" data-tab="records">Рекорды</button>
+<button class="tab-btn" data-tab="achievements">Достижения</button>
+<button class="tab-btn" data-tab="activity">Активность</button>
+<button class="tab-btn" data-tab="settings">Настройки</button>
+</div>
+
+<!-- TAB: OVERVIEW -->
+<div class="tab-content active" id="overview">
+<div class="stats-grid">
+<div class="stat-card reveal">
+<div class="icon"><i class="fas fa-dumbbell"></i></div>
+<div class="value" data-count="187">0</div>
+<div class="label">Тренировок</div>
+</div>
+<div class="stat-card reveal" style="transition-delay:0.08s">
+<div class="icon"><i class="fas fa-fire"></i></div>
+<div class="value" data-count="42">0</div>
+<div class="label">Дней подряд</div>
+</div>
+<div class="stat-card reveal" style="transition-delay:0.16s">
+<div class="icon"><i class="fas fa-clock"></i></div>
+<div class="value" data-count="96">0</div>
+<div class="label">Часов в зале</div>
+</div>
+<div class="stat-card reveal" style="transition-delay:0.24s">
+<div class="icon"><i class="fas fa-trophy"></i></div>
+<div class="value" data-count="11">0</div>
+<div class="label">Достижений</div>
+</div>
+</div>
+
+<div class="progress-section">
+<div class="progress-card reveal">
+<h3><i class="fas fa-chart-line"></i> Прогресс к цели</h3>
+<div class="bar-item">
+<div class="bar-header"><span>Мышечная масса</span><span>3.2 / 5 кг</span></div>
+<div class="bar-track"><div class="bar-fill" data-width="64"></div></div>
+</div>
+<div class="bar-item">
+<div class="bar-header"><span>Сила (жим лёжа)</span><span>105 / 120 кг</span></div>
+<div class="bar-track"><div class="bar-fill" data-width="87"></div></div>
+</div>
+<div class="bar-item">
+<div class="bar-header"><span>Посещаемость</span><span>18 / 20 трен.</span></div>
+<div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+</div>
+</div>
+<div class="progress-card reveal" style="transition-delay:0.1s">
+<h3><i class="fas fa-heartbeat"></i> Восстановление</h3>
+<div class="bar-item">
+<div class="bar-header"><span>Сон (среднее)</span><span>7.2 ч</span></div>
+<div class="bar-track"><div class="bar-fill" data-width="72" style="background:linear-gradient(90deg,var(--accent2),var(--accent3))"></div></div>
+</div>
+<div class="bar-item">
+<div class="bar-header"><span>Энергия</span><span>Высокая</span></div>
+<div class="bar-track"><div class="bar-fill" data-width="85" style="background:linear-gradient(90deg,var(--accent3),#00c853)"></div></div>
+</div>
+<div class="bar-item">
+<div class="bar-header"><span>Стресс</span><span>Низкий</span></div>
+<div class="bar-track"><div class="bar-fill" data-width="30" style="background:linear-gradient(90deg,#ff1744,var(--accent))"></div></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- TAB: RECORDS -->
+<div class="tab-content" id="records">
+<div class="records-grid">
+<div class="record-card reveal">
+<div class="record-icon"><i class="fas fa-bench"></i></div>
+<div class="record-info">
+<h4>Жим лёжа</h4>
+<div class="pr">105 кг</div>
+<div class="date">12 сен 2026</div>
+</div>
+</div>
+<div class="record-card reveal">
+<div class="record-icon"><i class="fas fa-arrow-up"></i></div>
+<div class="record-info">
+<h4>Приседания</h4>
+<div class="pr">140 кг</div>
+<div class="date">5 сен 2026</div>
+</div>
+</div>
+<div class="record-card reveal">
+<div class="record-icon"><i class="fas fa-grip-lines"></i></div>
+<div class="record-info">
+<h4>Становая тяга</h4>
+<div class="pr">160 кг</div>
+<div class="date">28 авг 2026</div>
+</div>
+</div>
+<div class="record-card reveal">
+<div class="record-icon"><i class="fas fa-dumbbell"></i></div>
+<div class="record-info">
+<h4>Жим гантелей</h4>
+<div class="pr">40×10 кг</div>
+<div class="date">10 сен 2026</div>
+</div>
+</div>
+<div class="record-card reveal">
+<div class="record-icon"><i class="fas fa-running"></i></div>
+<div class="record-info">
+<h4>Подтягивания</h4>
+<div class="pr">18 раз</div>
+<div class="date">3 сен 2026</div>
+</div>
+</div>
+<div class="record-card reveal">
+<div class="record-icon"><i class="fas fa-stopwatch"></i></div>
+<div class="record-info">
+<h4>Планка</h4>
+<div class="pr">3:45</div>
+<div class="date">15 авг 2026</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- TAB: ACHIEVEMENTS -->
+<div class="tab-content" id="achievements">
+<div class="achievements-grid">
+<div class="ach-card reveal">
+<span class="ach-badge">NEW</span>
+<div class="ach-icon"><i class="fas fa-fire"></i></div>
+<h4>Огонь</h4>
+<p>7 дней подряд</p>
+</div>
+<div class="ach-card reveal">
+<div class="ach-icon"><i class="fas fa-dumbbell"></i></div>
+<h4>Железный</h4>
+<p>100 тренировок</p>
+</div>
+<div class="ach-card reveal">
+<div class="ach-icon"><i class="fas fa-trophy"></i></div>
+<h4>Рекордсмен</h4>
+<p>5 личных рекордов</p>
+</div>
+<div class="ach-card reveal">
+<div class="ach-icon"><i class="fas fa-calendar-check"></i></div>
+<h4>Месяц силы</h4>
+<p>30 дней в приложении</p>
+</div>
+<div class="ach-card reveal">
+<div class="ach-icon"><i class="fas fa-bolt"></i></div>
+<h4>Скорость</h4>
+<p>10 HIIT-тренировок</p>
+</div>
+<div class="ach-card reveal">
+<div class="ach-icon"><i class="fas fa-heart"></i></div>
+<h4>Выносливость</h4>
+<p>50 кардио-сессий</p>
+</div>
+<div class="ach-card locked reveal">
+<div class="ach-icon"><i class="fas fa-lock"></i></div>
+<h4>Мастер</h4>
+<p>Уровень 20</p>
+</div>
+<div class="ach-card locked reveal">
+<div class="ach-icon"><i class="fas fa-lock"></i></div>
+<h4>Легенда</h4>
+<p>365 дней подряд</p>
+</div>
+</div>
+</div>
+
+<!-- TAB: ACTIVITY -->
+<div class="tab-content" id="activity">
+<div class="activity-list">
+<div class="activity-item reveal">
+<div class="act-icon"><i class="fas fa-dumbbell"></i></div>
+<div class="act-info">
+<h4>Завершена тренировка «Грудь + Трицепс»</h4>
+<span>6 упражнений · 58 минут</span>
+</div>
+<div class="act-time">Сегодня</div>
+</div>
+<div class="activity-item reveal">
+<div class="act-icon"><i class="fas fa-trophy"></i></div>
+<div class="act-info">
+<h4>Новый рекорд: Жим лёжа 105 кг</h4>
+<span>+2.5 кг к предыдущему</span>
+</div>
+<div class="act-time">Вчера</div>
+</div>
+<div class="activity-item reveal">
+<div class="act-icon"><i class="fas fa-fire"></i></div>
+<div class="act-info">
+<h4>Серия 42 дня подряд!</h4>
+<span>Ты в топ-5% пользователей</span>
+</div>
+<div class="act-time">2 дня назад</div>
+</div>
+<div class="activity-item reveal">
+<div class="act-icon"><i class="fas fa-running"></i></div>
+<div class="act-info">
+<h4>Завершена тренировка «Кардио-пульс»</h4>
+<span>35 минут · 420 ккал</span>
+</div>
+<div class="act-time">3 дня назад</div>
+</div>
+<div class="activity-item reveal">
+<div class="act-icon"><i class="fas fa-medal"></i></div>
+<div class="act-info">
+<h4>Получено достижение «Огонь»</h4>
+<span>7 дней тренировок подряд</span>
+</div>
+<div class="act-time">5 дней назад</div>
+</div>
+<div class="activity-item reveal">
+<div class="act-icon"><i class="fas fa-dumbbell"></i></div>
+<div class="act-info">
+<h4>Завершена тренировка «Ноги»</h4>
+<span>7 упражнений · 72 минуты</span>
+</div>
+<div class="act-time">6 дней назад</div>
+</div>
+</div>
+</div>
+
+<!-- TAB: SETTINGS -->
+<div class="tab-content" id="settings">
+<div class="settings-list reveal">
+<div class="setting-item">
+<div class="setting-info">
+<h4>Уведомления о тренировках</h4>
+<p>Напоминания в выбранные дни</p>
+</div>
+<div class="toggle on" data-toggle></div>
+</div>
+<div class="setting-item">
+<div class="setting-info">
+<h4>Звуки и вибрация</h4>
+<p>Таймеры и завершения подходов</p>
+</div>
+<div class="toggle on" data-toggle></div>
+</div>
+<div class="setting-item">
+<div class="setting-info">
+<h4>Публичный профиль</h4>
+<p>Другие пользователи могут видеть твой прогресс</p>
+</div>
+<div class="toggle on" data-toggle></div>
+</div>
+<div class="setting-item">
+<div class="setting-info">
+<h4>Еженедельный отчёт</h4>
+<p>Присылать сводку каждое воскресенье</p>
+</div>
+<div class="toggle on" data-toggle></div>
+</div>
+<div class="setting-item">
+<div class="setting-info">
+<h4>Синхронизация с Apple Health / Google Fit</h4>
+<p>Обмен данными о активности</p>
+</div>
+<div class="toggle" data-toggle></div>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><a href="index.html" class="logo">NovaForge</a><p>Фитнес-система для тех, кто хочет реального прогресса. Сделано в России.</p></div>
+<div class="footer-col"><h4>Продукт</h4><a href="training.html">Тренировки</a><a href="week.html">Программа</a><a href="challenges.html">Челленджи</a><a href="profile.html">Профиль</a></div>
+<div class="footer-col"><h4>Компания</h4><a href="index.html#about">О нас</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Контакты</a></div>
+<div class="footer-col"><h4>Контакты</h4><a href="tel:+74951234567">+7 (495) 123-45-67</a><a href="mailto:hello@novaforge.ru">hello@novaforge.ru</a></div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 NovaForge. Все права защищены.</span>
+<div class="socials"><a href="#"><i class="fab fa-telegram"></i></a><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

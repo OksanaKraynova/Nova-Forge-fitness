@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тренировки — NovaForge | Выбери свою программу</title>
+<meta name="description" content="Каталог тренировок NovaForge: домашние, силовые, кардио и мобилити. Интерактивный подбор программ, таймеры и прогресс. Фитнес без компромиссов.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+<div class="container header-inner">
+<a href="index.html" class="logo">NovaForge</a>
+<nav class="nav">
+<a href="index.html">Главная</a>
+<a href="training.html" class="active">Тренировки</a>
+<a href="week.html">Программа</a>
+<a href="challenges.html">Челленджи</a>
+<a href="profile.html">Профиль</a>
+</nav>
+<div class="burger" id="burger">
+<span></span><span></span><span></span>
+</div>
+</div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+<a href="index.html">Главная</a>
+<a href="training.html">Тренировки</a>
+<a href="week.html">Программа</a>
+<a href="challenges.html">Челленджи</a>
+<a href="profile.html">Профиль</a>
+</div>
+
+<main>
+  <!-- HERO -->
+<section class="train-hero">
+<div class="train-hero-bg"></div>
+<div class="container">
+<div class="train-hero-content">
+<div class="badge"><i class="fas fa-dumbbell"></i> КАТАЛОГ ПРОГРАММ</div>
+<h1>Тренировки, которые <span>работают</span></h1>
+<p>Более 80 готовых программ под любой уровень и цель. Фильтруй, выбирай, запускай. Каждая программа адаптируется под тебя в реальном времени.</p>
+<div class="hero-stats">
+<div class="hero-stat"><strong>80+</strong><span>программ</span></div>
+<div class="hero-stat"><strong>12</strong><span>направлений</span></div>
+<div class="hero-stat"><strong>4–70</strong><span>минут на занятие</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FILTERS -->
+<div class="filters">
+<div class="container">
+<div class="filter-row" id="filterRow">
+<button class="filter-btn active" data-filter="all">Все</button>
+<button class="filter-btn" data-filter="home">Дома</button>
+<button class="filter-btn" data-filter="strength">Сила</button>
+<button class="filter-btn" data-filter="cardio">Кардио</button>
+<button class="filter-btn" data-filter="mobility">Мобилити</button>
+</div>
+</div>
+</div>
+
+<!-- PROGRAMS -->
+<section class="programs">
+<div class="container">
+<div class="programs-grid" id="programsGrid">
+
+<!-- HOME -->
+<div class="program-card reveal" data-category="home">
+<div class="card-img">
+<img src="images/home.jpg" alt="Домашний форс">
+<div class="card-overlay"></div>
+<span class="card-tag tag-home">ДОМА</span>
+</div>
+<div class="card-body">
+<h3>Домашний форс</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 30–45 мин</span>
+<span><i class="fas fa-fire"></i> Средний</span>
+</div>
+<p>Полноценные тренировки без зала. Гантели, турник, собственный вес. Прогрессия каждую неделю. Идеально, если времени в обрез.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+<div class="program-card reveal reveal-delay-1" data-category="home">
+<div class="card-img">
+<img src="images/home2.jpeg" alt="Свой вес">
+<div class="card-overlay"></div>
+<span class="card-tag tag-home">ДОМА</span>
+</div>
+<div class="card-body">
+<h3>Только свой вес</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 25–40 мин</span>
+<span><i class="fas fa-fire"></i> Начальный</span>
+</div>
+<p>Ноль оборудования. Отжимания, приседания, планки, берпи и вариации. Отлично для старта и путешествий.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span class="filled"></span><span></span><span></span><span></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+<div class="program-card reveal reveal-delay-2" data-category="home">
+<div class="card-img">
+<img src="images/home3.jpeg" alt="HIIT дома">
+<div class="card-overlay"></div>
+<span class="card-tag tag-home">ДОМА</span>
+</div>
+<div class="card-body">
+<h3>HIIT без зала</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 20–30 мин</span>
+<span><i class="fas fa-fire"></i> Высокий</span>
+</div>
+<p>Интервалы высокой интенсивности. Жиросжигание на максимуме. Коротко, жёстко, эффективно.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+<!-- STRENGTH -->
+<div class="program-card reveal" data-category="strength">
+<div class="card-img">
+<img src="images/power.jpeg" alt="Железная логика">
+<div class="card-overlay"></div>
+<span class="card-tag tag-strength">СИЛА</span>
+</div>
+<div class="card-body">
+<h3>Железная логика</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 50–70 мин</span>
+<span><i class="fas fa-fire"></i> Продвинутый</span>
+</div>
+<p>Классический пауэрлифтинг + гипертрофия. Работа с процентами, циклы, прогрессия. Для тех, кто серьёзно.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+<div class="program-card reveal reveal-delay-1" data-category="strength">
+<div class="card-img">
+<img src="images/power2.jpeg" alt="Push Pull">
+<div class="card-overlay"></div>
+<span class="card-tag tag-strength">СИЛА</span>
+</div>
+<div class="card-body">
+<h3>Push / Pull / Legs</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 45–60 мин</span>
+<span><i class="fas fa-fire"></i> Средний+</span>
+</div>
+<p>Самая популярная сплит-система. 6 тренировок в неделю или 3. Чёткое разделение мышечных групп.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+<div class="program-card reveal reveal-delay-2" data-category="strength">
+<div class="card-img">
+<img src="images/power3.jpeg" alt="Новичок в зале">
+<div class="card-overlay"></div>
+<span class="card-tag tag-strength">СИЛА</span>
+</div>
+<div class="card-body">
+<h3>Первый месяц в зале</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 40–50 мин</span>
+<span><i class="fas fa-fire"></i> Начальный</span>
+</div>
+<p>Мягкий вход в железный спорт. Техника, базовые движения, адаптация. Без перегруза и травм.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span class="filled"></span><span></span><span></span><span></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+<!-- CARDIO -->
+<div class="program-card reveal" data-category="cardio">
+<div class="card-img">
+<img src="images/runing.jpeg" alt="Кардио-пульс">
+<div class="card-overlay"></div>
+<span class="card-tag tag-cardio">КАРДИО</span>
+</div>
+<div class="card-body">
+<h3>Кардио-пульс</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 30–50 мин</span>
+<span><i class="fas fa-fire"></i> Средний</span>
+</div>
+<p>Бег, вело, эллипс, гребной. Планы под пульсовые зоны. Подготовка к 5–21 км.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+<div class="program-card reveal reveal-delay-1" data-category="cardio">
+<div class="card-img">
+<img src="images/running2.jpeg" alt="Марафон">
+<div class="card-overlay"></div>
+<span class="card-tag tag-cardio">КАРДИО</span>
+</div>
+<div class="card-body">
+<h3>Путь к марафону</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 45–90 мин</span>
+<span><i class="fas fa-fire"></i> Высокий</span>
+</div>
+<p>16-недельный план к 42,2 км. Длинные, темповые, интервалы. Всё по науке.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+<div class="program-card reveal reveal-delay-2" data-category="cardio">
+<div class="card-img">
+<img src="images/running.jpeg" alt="Жиросжигание">
+<div class="card-overlay"></div>
+<span class="card-tag tag-cardio">КАРДИО</span>
+</div>
+<div class="card-body">
+<h3>Жиросжигающий микс</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 25–40 мин</span>
+<span><i class="fas fa-fire"></i> Средний</span>
+</div>
+<p>Комбинация кардио и силовых кругов. Максимум калорий за минимальное время.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+<!-- MOBILITY -->
+<div class="program-card reveal" data-category="mobility">
+<div class="card-img">
+<img src="images/yoga.jpeg" alt="Мобайл-флоу">
+<div class="card-overlay"></div>
+<span class="card-tag tag-mobility">МОБИЛИТИ</span>
+</div>
+<div class="card-body">
+<h3>Мобайл-флоу</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 20–35 мин</span>
+<span><i class="fas fa-fire"></i> Начальный</span>
+</div>
+<p>Растяжка + мобилити + лёгкая йога. Снимает зажимы, улучшает осанку и амплитуду.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span class="filled"></span><span></span><span></span><span></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+<div class="program-card reveal reveal-delay-1" data-category="mobility">
+<div class="card-img">
+<img src="images/yoga2.jpeg" alt="Йога">
+<div class="card-overlay"></div>
+<span class="card-tag tag-mobility">МОБИЛИТИ</span>
+</div>
+<div class="card-body">
+<h3>Силовая йога</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 30–45 мин</span>
+<span><i class="fas fa-fire"></i> Средний</span>
+</div>
+<p>Динамические связки, баланс, сила кора. Для тех, кто хочет гибкость + тонус.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+<div class="program-card reveal reveal-delay-2" data-category="mobility">
+<div class="card-img">
+<img src="images/yoga3.jpeg" alt="Восстановление">
+<div class="card-overlay"></div>
+<span class="card-tag tag-mobility">МОБИЛИТИ</span>
+</div>
+<div class="card-body">
+<h3>Восстановление 40+</h3>
+<div class="card-meta">
+<span><i class="fas fa-clock"></i> 25–40 мин</span>
+<span><i class="fas fa-fire"></i> Мягкий</span>
+</div>
+<p>Специально для тех, кому за 40. Суставы, спина, таз. Без боли и рывков.</p>
+<div class="card-footer">
+<div class="level"><span class="filled"></span><span></span><span></span><span></span><span></span></div>
+<button class="btn-start">Начать</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- INTERACTIVE TIMER DEMO -->
+<section class="demo-section">
+<div class="container demo-grid">
+<div class="demo-text reveal">
+<div class="section-label" style="color:var(--accent);letter-spacing:3px;font-size:0.82rem;margin-bottom:12px">ИНТЕРАКТИВ</div>
+<h2 class="section-title" style="font-size:clamp(2rem,4vw,3rem);margin-bottom:24px">Попробуй таймер прямо сейчас</h2>
+<p>Это демо настоящего тренировочного таймера из приложения. Запусти, поставь на паузу, сбрось. В полной версии он синхронизируется с программой и считает подходы, отдых и калории.</p>
+<ul class="demo-features">
+<li><i class="fas fa-check-circle"></i> Автоматический переход между упражнениями</li>
+<li><i class="fas fa-check-circle"></i> Голосовые подсказки (в приложении)</li>
+<li><i class="fas fa-check-circle"></i> Сохранение истории и прогресса</li>
+<li><i class="fas fa-check-circle"></i> Работает даже без интернета</li>
+</ul>
+<a href="index.html#pricing" class="btn btn-primary"><i class="fas fa-rocket"></i> Получить полный доступ</a>
+</div>
+
+<div class="timer-card reveal reveal-delay-1">
+<div class="timer-label">ДЕМО-ТАЙМЕР · 45 СЕКУНД</div>
+<div class="timer-display" id="timerDisplay">00:45</div>
+<div class="timer-controls">
+<button class="timer-btn start" id="startBtn"><i class="fas fa-play"></i> Старт</button>
+<button class="timer-btn pause" id="pauseBtn"><i class="fas fa-pause"></i> Пауза</button>
+<button class="timer-btn reset" id="resetBtn"><i class="fas fa-redo"></i> Сброс</button>
+</div>
+<div class="timer-progress"><div class="timer-bar" id="timerBar"></div></div>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+<div class="container">
+<div class="how-header reveal">
+<div class="section-label" style="color:var(--accent);letter-spacing:3px;font-size:0.82rem;margin-bottom:12px">КАК ЭТО РАБОТАЕТ</div>
+<h2 class="section-title" style="font-size:clamp(2rem,4vw,3rem);margin-bottom:16px">От выбора до результата — 4 шага</h2>
+<p style="color:var(--muted)">Никакой магии. Только система, которая не даёт тебе сдаться.</p>
+</div>
+<div class="how-steps">
+<div class="step reveal">
+<div class="step-num">01</div>
+<h3>Выбери программу</h3>
+<p>Фильтр по цели, месту и уровню. Нашёл — запускай.</p>
+</div>
+<div class="step reveal reveal-delay-1">
+<div class="step-num">02</div>
+<h3>Пройди вводный</h3>
+<p>Короткий тест и первая адаптация под тебя.</p>
+</div>
+<div class="step reveal reveal-delay-2">
+<div class="step-num">03</div>
+<h3>Тренируйся</h3>
+<p>Видео, таймеры, подсказки. Всё под рукой.</p>
+</div>
+<div class="step reveal reveal-delay-3">
+<div class="step-num">04</div>
+<h3>Смотри прогресс</h3>
+<p>Графики, прогнозы, корректировки каждую неделю.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FEATURED -->
+<section class="featured">
+<div class="container featured-grid">
+<div class="featured-img reveal">
+<img src="images/power.jpeg" alt="Избранная программа">
+<span class="featured-badge">ХИТ МЕСЯЦА</span>
+</div>
+<div class="featured-content reveal reveal-delay-1">
+<div class="section-label" style="color:var(--accent);letter-spacing:3px;font-size:0.82rem;margin-bottom:12px">РЕКОМЕНДУЕМ</div>
+<h2 class="section-title" style="font-size:clamp(1.9rem,3.5vw,2.8rem);margin-bottom:20px">Железная логика 2.0</h2>
+<p>Самая мощная силовая программа в каталоге. Обновлённые циклы, работа с процентами от 1ПМ, встроенные делиоды и тестовые недели.</p>
+<p>Уже более 2100 человек прошли полный 16-недельный цикл. Средний прирост жима лёжа — +18 кг.</p>
+<ul class="featured-list">
+<li><i class="fas fa-check"></i> 16 недель структурированной нагрузки</li>
+<li><i class="fas fa-check"></i> Автоматический пересчёт рабочих весов</li>
+<li><i class="fas fa-check"></i> Видео техники на каждое упражнение</li>
+<li><i class="fas fa-check"></i> Сообщество и поддержка тренеров</li>
+</ul>
+<a href="index.html#pricing" class="btn btn-primary">Начать эту программу</a>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<div class="container reveal">
+<h2>Готов начать<br>свою трансформацию?</h2>
+<p>Первые 7 дней — бесплатно. Без карты, без обязательств. Просто зайди и потренируйся.</p>
+<a href="index.html#pricing" class="btn btn-primary"><i class="fas fa-bolt"></i> Попробовать бесплатно</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><a href="index.html" class="logo">NovaForge</a><p>Фитнес-система для тех, кто хочет реального прогресса. Сделано в России.</p></div>
+<div class="footer-col"><h4>Продукт</h4><a href="training.html">Тренировки</a><a href="week.html">Программа</a><a href="challenges.html">Челленджи</a><a href="profile.html">Профиль</a></div>
+<div class="footer-col"><h4>Компания</h4><a href="index.html#about">О нас</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Контакты</a></div>
+<div class="footer-col"><h4>Контакты</h4><a href="tel:+74951234567">+7 (495) 123-45-67</a><a href="mailto:hello@novaforge.ru">hello@novaforge.ru</a></div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 NovaForge. Все права защищены.</span>
+<div class="socials"><a href="#"><i class="fab fa-telegram"></i></a><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

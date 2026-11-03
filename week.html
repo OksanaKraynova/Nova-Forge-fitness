@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Программа на неделю — NovaForge</title>
+<meta name="description" content="Интерактивная программа тренировок на неделю от NovaForge. Отмечай упражнения, следи за прогрессом, используй таймеры. Фитнес без компромиссов.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="header">
+<div class="container header-inner">
+<a href="index.html" class="logo">NovaForge</a>
+<nav class="nav">
+<a href="index.html">Главная</a>
+<a href="training.html">Тренировки</a>
+<a href="week.html" class="active">Программа</a>
+<a href="challenges.html" >Челленджи</a>
+<a href="profile.html">Профиль</a>
+</nav>
+<div class="burger" id="burger"><span></span><span></span><span></span></div>
+</div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+<a href="index.html">Главная</a>
+<a href="training.html">Тренировки</a>
+<a href="week.html">Программа</a>
+<a href="challenges.html">Челленджи</a>
+<a href="profile.html">Профиль</a>
+</div>
+
+<main>
+  <!-- HERO -->
+<section class="week-hero">
+<div class="week-hero-bg"></div>
+<div class="container">
+<div class="week-hero-content">
+<div class="badge"><i class="fas fa-calendar-week"></i> ПРОГРАММА НЕДЕЛИ</div>
+<h1>Твоя неделя <span>силы</span></h1>
+<p>Интерактивный план. Отмечай упражнения, запускай таймеры, следи за прогрессом. Всё сохраняется прямо в браузере.</p>
+</div>
+</div>
+</section>
+
+<div class="container">
+
+<!-- WEEK PROGRESS -->
+<div class="week-progress-wrap reveal">
+<div class="progress-ring-wrap">
+<svg class="progress-ring" width="110" height="110" viewBox="0 0 110 110">
+<defs>
+<linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#ff5e00"/>
+<stop offset="100%" stop-color="#00e5ff"/>
+</linearGradient>
+</defs>
+<circle class="bg" cx="55" cy="55" r="48"/>
+<circle class="fg" id="progressCircle" cx="55" cy="55" r="48" stroke-dasharray="301.6" stroke-dashoffset="301.6"/>
+</svg>
+<div class="progress-percent" id="progressPercent">0%</div>
+</div>
+<div class="progress-info">
+<h3>Прогресс недели</h3>
+<p>Отмечай упражнения — прогресс обновляется автоматически</p>
+</div>
+<div class="progress-stats">
+<div class="p-stat"><strong id="doneCount">0</strong><span>выполнено</span></div>
+<div class="p-stat"><strong id="totalCount">0</strong><span>всего</span></div>
+<div class="p-stat"><strong id="dayDone">0/6</strong><span>дней</span></div>
+</div>
+</div>
+
+<!-- DAY SELECTOR -->
+<div class="day-selector reveal" id="daySelector">
+<button class="day-btn active" data-day="0"><span class="day-name">Пн</span><span class="day-type">Грудь + Триц</span></button>
+<button class="day-btn" data-day="1"><span class="day-name">Вт</span><span class="day-type">Спина + Биц</span></button>
+<button class="day-btn" data-day="2"><span class="day-name">Ср</span><span class="day-type">Ноги</span></button>
+<button class="day-btn rest" data-day="3"><span class="day-name">Чт</span><span class="day-type">Отдых</span></button>
+<button class="day-btn" data-day="4"><span class="day-name">Пт</span><span class="day-type">Плечи + Пресс</span></button>
+<button class="day-btn" data-day="5"><span class="day-name">Сб</span><span class="day-type">Full Body</span></button>
+<button class="day-btn rest" data-day="6"><span class="day-name">Вс</span><span class="day-type">Отдых</span></button>
+</div>
+
+<!-- WORKOUT PANEL -->
+<div class="workout-panel reveal" id="workoutPanel">
+<!-- Content injected by JS -->
+</div>
+
+</div>
+
+<!-- TIPS -->
+<section class="tips">
+<div class="container">
+<div style="text-align:center;margin-bottom:50px" class="reveal">
+<div style="color:var(--accent);letter-spacing:3px;font-size:0.82rem;margin-bottom:12px">СОВЕТЫ НЕДЕЛИ</div>
+<h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem)">Как выжать максимум</h2>
+</div>
+<div class="tips-grid">
+<div class="tip-card reveal">
+<i class="fas fa-bed"></i>
+<h3>Сон — это тренировка</h3>
+<p>Мышцы растут, когда ты спишь. Цель — 7–8 часов. Без этого даже идеальная программа будет работать вполсилы.</p>
+</div>
+<div class="tip-card reveal" style="transition-delay:0.1s">
+<i class="fas fa-drumstick-bite"></i>
+<h3>Белок каждый день</h3>
+<p>Ориентир — 1.6–2.2 г на кг веса. Распределяй по приёмам пищи. Не обязательно считать до грамма, но следи.</p>
+</div>
+<div class="tip-card reveal" style="transition-delay:0.2s">
+<i class="fas fa-tint"></i>
+<h3>Вода и прогрессия</h3>
+<p>Пей 30–40 мл на кг веса. И каждую неделю старайся добавить вес или повторение хотя бы в одном упражнении.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<div class="container reveal">
+<h2>Хочешь персональную<br>программу под себя?</h2>
+<p>В тарифе Про и Элит алгоритмы адаптируют план каждую неделю под твой прогресс и восстановление.</p>
+<a href="index.html#pricing" class="btn btn-primary"><i class="fas fa-rocket"></i> Смотреть тарифы</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><a href="index.html" class="logo">NovaForge</a><p>Фитнес-система для тех, кто хочет реального прогресса. Сделано в России.</p></div>
+<div class="footer-col"><h4>Продукт</h4><a href="training.html">Тренировки</a><a href="week.html">Программа</a><a href="challenges.html">Челленджи</a><a href="profile.html">Профиль</a></div>
+<div class="footer-col"><h4>Компания</h4><a href="index.html#about">О нас</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Контакты</a></div>
+<div class="footer-col"><h4>Контакты</h4><a href="tel:+74951234567">+7 (495) 123-45-67</a><a href="mailto:hello@novaforge.ru">hello@novaforge.ru</a></div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 NovaForge. Все права защищены.</span>
+<div class="socials"><a href="#"><i class="fab fa-telegram"></i></a><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div>
+</div>
+</div>
+</footer>
+
+<!-- MINI TIMER -->
+<div class="mini-timer" id="miniTimer">
+<h4 id="timerTitle">Отдых</h4>
+<div class="time" id="miniTime">01:30</div>
+<div class="controls">
+<button class="t-start" id="miniStart">Старт</button>
+<button class="t-stop" id="miniStop">Закрыть</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
